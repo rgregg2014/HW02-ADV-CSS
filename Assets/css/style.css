@@ -1,5 +1,5 @@
 * {
-  /*border: red 1px solid;*/
+  /* border: red 1px solid; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   font-size: 16px;
@@ -16,33 +16,30 @@ body {
   background-color: var(--background);
 }
 
-h1 {
+a {
+  text-decoration: none;
+}
+
+/* main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+
+header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 16px;
   margin: 0;
   background-color: var(--dark);
   color: var(--contrast);
   font-size: 2.5em;
-}
-
-h2 {
-  margin-bottom: 15px;
-  margin-top: 5px;
-  font-size: 1.75em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-div {
-  border: var(--dark) 2px solid;
-}
-
-p {
-  padding-bottom: 5px;
 }
 
 .navBar {
@@ -55,7 +52,74 @@ p {
   margin-left: -47px;
   background-color: var(--contrast);
   font-weight: bold;
-  color: black;
+}
+
+h2 {
+  margin-bottom: 15px;
+  margin-top: 0px;
+  padding-top: 5px;
+  font-size: 1.75em;
+  background-color: var(--dark);
+  color: var(--contrast);
+}
+
+div#aboutMe {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.secondaryPortfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#portfolio {
+  display: flex;
+  flex-direction: column;
+  margin-top: -15px;
+}
+
+.smallPortfolio {
+  display: flex;
+  flex-direction: column;
+  max-height: 419px;
+  margin-top: 51px;
+  margin-bottom: 26px;
+}
+
+h3 {
+  font-size: 1.5em;
+  background-color: var(--dark);
+  color: var(--contrast);
+}
+
+div {
+  border: var(--dark) 2px solid;
+}
+
+p {
+  padding-bottom: 5px;
+}
+
+/* .smallPortfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+} */
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: auto;
+}
+
+#aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: auto;
 }
 
 .contactBar {
@@ -68,26 +132,7 @@ p {
   margin-left: -47px;
   background-color: var(--contrast);
   font-weight: bold;
-  color: black;
+  color: var(--dark);
 }
 
-div#aboutMe {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-div#portfolio {
-  display: flex;
-  flex-direction: column;
-}
-
-.smallPortfolio {
-  display: flex;
-  flex-direction: column;
-  max-height: 419px;
-  margin-top: 51px;
-  margin-bottom: 26px;
-}
-
-/*TODO: Add in media queries, needs to be mobile responsive. Maybe add in another div? Take photos and grab screenshots. Finish README. Push to GH and deploy page.
+/*TODO: Add in media queries, needs to be mobile responsive. Take photos and grab screenshots. Finish README. Push to GH and deploy page.*/
