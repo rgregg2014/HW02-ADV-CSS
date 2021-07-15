@@ -20,12 +20,6 @@ a {
   text-decoration: none;
 }
 
-/* main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
-
 header {
   display: flex;
   flex-direction: column;
@@ -69,9 +63,13 @@ div#aboutMe {
   margin-bottom: 20px;
 }
 
+h2#portHead {
+  text-align: center;
+}
+
 .secondaryPortfolio {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 div#portfolio {
@@ -102,12 +100,6 @@ p {
   padding-bottom: 5px;
 }
 
-/* .smallPortfolio {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-} */
-
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -135,4 +127,42 @@ p {
   color: var(--dark);
 }
 
-/*TODO: Add in media queries, needs to be mobile responsive. Take photos and grab screenshots. Finish README. Push to GH and deploy page.*/
+@media screen and (min-width: 768px) {
+  div#aboutMe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 28%;
+    margin-right: 28%;
+    width: 411px;
+    height: 788px;
+  }
+
+  div#portfolio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 28%;
+    margin-right: 28%;
+    width: 411px;
+    height: 788px;
+  }
+
+  .secondaryPortfolio {
+    display: flex;
+    width: 25%;
+    height: auto;
+    flex-flow: row;
+    margin-left: 12%;
+    margin-right: 10%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    border: none;
+  }
+
+  .smallPortfolio {
+    padding-bottom: 53px;
+    justify-content: end;
+    margin-left: 25px;
+  }
+}
