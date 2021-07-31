@@ -1,23 +1,30 @@
+/* Universal Styles */
+
 * {
-  /* border: red 1px solid; */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0;
-  font-size: 16px;
+  border: red 1px solid;
+  box-sizing: border-box;
 }
 
 :root {
   --background: rgb(239, 239, 240);
-  --light: rgb(211, 216, 218);
-  --dark: rgb(131, 160, 168);
-  --contrast: rgb(236, 236, 226);
+  --light: rgb(240, 251, 255);
+  --dark: rgb(157, 214, 229);
+  --contrast: rgb(241, 241, 223);
 }
+
+/* Element Styles */
 
 body {
   background-color: var(--background);
 }
 
-a {
+a p {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 h2 {
+  font-family: "Vollkorn", serif;
 }
 
 header {
@@ -36,6 +43,17 @@ h1 {
   font-size: 2.5em;
 }
 
+h2 {
+  margin-bottom: 15px;
+  margin-top: 0px;
+  padding-top: 5px;
+  font-size: 1.75em;
+  background-color: var(--dark);
+  color: var(--contrast);
+}
+
+/* Class Styles */
+
 .navBar {
   list-style: none;
   display: flex;
@@ -47,14 +65,22 @@ h1 {
   background-color: var(--contrast);
   font-weight: bold;
 }
+.contactBar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -47px;
+  background-color: var(--contrast);
+  font-weight: bold;
+  color: var(--dark);
+}
 
-h2 {
-  margin-bottom: 15px;
-  margin-top: 0px;
-  padding-top: 5px;
-  font-size: 1.75em;
-  background-color: var(--dark);
-  color: var(--contrast);
+.secondaryPortfolio {
+  display: flex;
+  flex-direction: column;
 }
 
 div#aboutMe {
@@ -65,11 +91,6 @@ div#aboutMe {
 
 h2#portHead {
   text-align: center;
-}
-
-.secondaryPortfolio {
-  display: flex;
-  flex-direction: column;
 }
 
 div#portfolio {
@@ -100,6 +121,12 @@ p {
   padding-bottom: 5px;
 }
 
+/* ID Styles */
+
+#portPhoto {
+  max-height: 10%;
+}
+
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -112,19 +139,6 @@ p {
   flex-direction: column;
   align-content: center;
   width: auto;
-}
-
-.contactBar {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: -47px;
-  background-color: var(--contrast);
-  font-weight: bold;
-  color: var(--dark);
 }
 
 @media screen and (min-width: 768px) {
