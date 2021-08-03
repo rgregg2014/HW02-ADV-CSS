@@ -40,16 +40,27 @@ h2 {
 }
 
 /* Class Styles */
+.main-portfolio {
+  width: 50%;
+  height: 50%;
+}
 
 .secondaryPortfolio {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar {
   background-color: var(--dark);
   padding: 15px;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+.card-position {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* ID Styles */
@@ -79,10 +90,4 @@ div#aboutMe {
   color: #4a4a4a;
   max-width: 42%;
   position: relative;
-}
-#card-position {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
