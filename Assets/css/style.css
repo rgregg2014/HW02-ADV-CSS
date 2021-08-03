@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 * {
-  border: red 1px solid;
+  /* border: red 1px solid; */
   box-sizing: border-box;
 }
 
@@ -10,6 +10,8 @@
   --light: rgb(240, 251, 255);
   --dark: rgb(157, 214, 229);
   --contrast: rgb(241, 241, 223);
+  /* font-family: "Fira Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif; */
 }
 
 /* Element Styles */
@@ -20,27 +22,12 @@ body {
 
 a p {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  padding-bottom: 5px;
 }
 
 h1 h2 {
-  font-family: "Vollkorn", serif;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 16px;
-  margin: 0;
-  background-color: var(--dark);
-  color: var(--contrast);
-  font-size: 2.5em;
+  font-family: "Ubuntu", sans-serif;
 }
 
 h2 {
@@ -54,85 +41,18 @@ h2 {
 
 /* Class Styles */
 
-.navBar {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: -47px;
-  background-color: var(--contrast);
-  font-weight: bold;
-}
-.contactBar {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: -47px;
-  background-color: var(--contrast);
-  font-weight: bold;
-  color: var(--dark);
-}
-
 .secondaryPortfolio {
   display: flex;
   flex-direction: column;
 }
 
-div#aboutMe {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-h2#portHead {
-  text-align: center;
-}
-
-div#portfolio {
-  display: flex;
-  flex-direction: column;
-  margin-top: -15px;
-}
-
-.smallPortfolio {
-  display: flex;
-  flex-direction: column;
-  max-height: 419px;
-  margin-top: 51px;
-  margin-bottom: 26px;
-}
-
-h3 {
-  font-size: 1.5em;
+.navbar {
   background-color: var(--dark);
-  color: var(--contrast);
-}
-
-div {
-  border: var(--dark) 2px solid;
-}
-
-p {
-  padding-bottom: 5px;
+  padding: 15px;
+  font-size: 30px;
 }
 
 /* ID Styles */
-
-#portPhoto {
-  max-height: 10%;
-}
-
-#portfolio {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: auto;
-}
 
 #aboutMe {
   display: flex;
@@ -141,42 +61,28 @@ p {
   width: auto;
 }
 
-@media screen and (min-width: 768px) {
-  div#aboutMe {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-left: 28%;
-    margin-right: 28%;
-    width: 411px;
-    height: 788px;
-  }
+div#aboutMe {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 
-  div#portfolio {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-left: 28%;
-    margin-right: 28%;
-    width: 411px;
-    height: 788px;
-  }
-
-  .secondaryPortfolio {
-    display: flex;
-    width: 25%;
-    height: auto;
-    flex-flow: row;
-    margin-left: 12%;
-    margin-right: 10%;
-    margin-top: 0%;
-    margin-bottom: 3%;
-    border: none;
-  }
-
-  .smallPortfolio {
-    padding-bottom: 53px;
-    justify-content: end;
-    margin-left: 25px;
-  }
+#myFace {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+#aboutMe {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  color: #4a4a4a;
+  max-width: 42%;
+  position: relative;
+}
+#card-position {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

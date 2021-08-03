@@ -7,180 +7,270 @@
     <title>Rachel Gregg</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-
+    <link rel="stylesheet" href="./Assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Vollkorn:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300&family=Ubuntu:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
 
   <body>
-    <!--Navigation bar with document links to ABout Me, Portfolio, and Contact bar.-->
+    <!--Navigation bar with document links to ABout Me, Portfolio, and Contact bar, Bulma.io-->
 
-    <header>
-      <h1>Rachel Gregg</h1>
-      <nav>
-        <ul class="navbar-nav navBar">
-          <li><a class="nav-item" href="index.html#aboutMe">About Me</a></li>
-          <li><a class="nav-item" href="index.html#portfolio">Portfolio</a></li>
-          <li><a class="nav-item" href="index.html#contactMe">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--About Me section.-->
-    <main>
-      <!-- <div id="aboutMe">
-        <img
-          src="./Assets/images/profilePhoto2.jpg"
-          title="GitHub Profile Photo"
-        />
-        <h2>About Me</h2>
-        <p>
-          Welcome! I'm a new web developer based in Buffalo, NY. I have over ten
-          years experience in customer sales, with five of those years in team
-          management. I am looking forward to using my new skills in web
-          development to lead motivated, ambitious teams in innovative projects.
-        </p>
-      </div> -->
-      <div class="card" style="width: 18rem">
-        <img
-          src="./Assets/images/profilePhoto2.jpg"
-          class="card-img-top"
-          alt="GitHub Profile Photo"
-        />
-        <div class="card-body">
-          <p class="card-text">
-            Welcome! I'm a new web developer based in Buffalo, NY. I have over
-            ten years experience in customer sales, with five of those years in
-            team management. I am looking forward to using my new skills in web
-            development to lead motivated, ambitious teams in innovative
-            projects.
-          </p>
-        </div>
-      </div>
-      <!--Portfolio Section with links to specific repos. Temporary placeholders until more content is available.-->
-
-      <h2 id="portHead">Portfolio</h2>
-
-      <div class="card" style="width: 18rem">
-        <img
-          src="./Assets/images/placeholder-port-1.jpg"
-          class="card-img-top"
-          alt="Placeholder image of wheat, screenshots upon completed project"
-        />
-        <div class="card-body">
-          <p class="card-text">
-            STKR is a stock market and financial news aggregate. It combines
-            HTML, CSS, and JavaScript with two server-side APIs and Bulma, a
-            styling framework to create a functioning application.
-          </p>
-        </div>
-      </div>
-      <!-- <div id="portfolio">
-        <img
-          src="./Assets/images/placeholder-port-1.jpg"
-          alt="Placeholder image of wheat, screenshots upon completed project"
-        />
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io"> Rachel Gregg </a>
 
         <a
-          href="https://naf15.github.io/STKR/"
-          title="GitHub Pages Deployment for STKR"
-          ><h3>STKR</h3></a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
         >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-        <p>
-          STKR is a stock market and financial news aggregate. It combines HTML,
-          CSS, and JavaScript with two server-side APIs and Bulma, a styling
-          framework to create a functioning application.
-        </p>
-      </div> -->
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html#aboutMe"> About Me </a>
 
-      <div class="secondaryPortfolio">
-        <div class="smallPortfolio">
-          <img
-            src="./Assets/images/placeholder-port-3.jpg"
-            alt="Placeholder image of a night sky"
-          />
-          <a
-            href="https://rgregg2014.github.io/HW1-code-refactor/"
-            title="SEO Refactor of HTML"
-            ><h3>Code Refactor</h3></a
-          >
-          <p>
-            In this assignment, I was responsible for restructuring existing
-            HTML to optimize search engine optimization as well as improving
-            site accessibility.
-          </p>
+          <a class="navbar-item" href="index.html#portHead"> Portfolio </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Contact Me </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://github.com/rgregg2014">
+                GitHub
+              </a>
+              <a class="navbar-item" href="#"> Twitter </a>
+              <a
+                class="navbar-item"
+                href="https://www.linkedin.com/in/rachel-gregg-35b59a208/"
+              >
+                LinkedIn
+              </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> rgregg2014@gmail.com </a>
+              <a class="navbar-item" href="#">Resume Download (PDF)</a>
+            </div>
+          </div>
         </div>
-
-        <div class="smallPortfolio">
-          <img
-            src="./Assets/images/placeholder-port-3.jpg"
-            alt="Placeholder image of a laptop"
-          />
-          <a
-            href="https://rgregg2014.github.io/Password-Generator/"
-            title="GitHub Pages Deployment of Password Generator"
-            ><h3>Password Generator</h3></a
-          >
-          <p>
-            A staple of learning JavaScript: the password generator. This
-            application allows users to select up to four different character
-            types to generate a secure password between 8 and 128 characters.
-          </p>
+      </div>
+    </nav>
+    <!--About Me section, Bulma.io-->
+    <main>
+      <div id="card-position">
+        <div id="aboutMe" class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="./Assets/images/profilePhoto2.jpg"
+                id="myFace"
+                class="card-img-top"
+                alt="GitHub Profile Photo"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Rachel Gregg</p>
+                <p class="subtitle is-6">@brazengaited</p>
+              </div>
+            </div>
+            <div class="content">
+              Welcome! I'm a new web developer based in Buffalo, NY. I have over
+              ten years experience in customer sales, with five of those years
+              in team management. I am looking forward to using my new skills in
+              web development to lead motivated, ambitious teams in innovative
+              projects.
+            </div>
+          </div>
         </div>
-
-        <div class="smallPortfolio">
-          <img
-            src="./Assets/images/placeholder-port-3.jpg"
-            alt="Placeholder image of a laptop"
-          />
-          <a href="#"><h3>Portfolio Item 4</h3></a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            dignissimos ratione vero alias rerum corporis totam obcaecati.
-          </p>
+      </div>
+      <!--Portfolio Section with links to specific repos. Temporary placeholders until more content is available. Bulma.io-->
+      <section class="hero">
+        <div class="hero-body">
+          <p class="title">Portfolio</p>
+          <p class="subtitle">Check me out on Github for more projects</p>
         </div>
+      </section>
 
-        <div class="smallPortfolio">
-          <img
-            src="./Assets/images/placeholder-port-3.jpg"
-            alt="Placeholder image of a laptop"
-          />
-          <a href="#"><h3>Portfolio Item 5</h3></a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            dignissimos ratione vero alias rerum corporis totam obcaecati.
-          </p>
+      <div class="card-position">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="./Assets/images/placeholder-port-1.jpg"
+                class="card-img-top"
+                alt="Placeholder image of wheat, screenshots upon completed project"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">STKR</p>
+                <p class="subtitle is-6">HTML, CSS, JavaScript</p>
+                <a class="subtitle is-6" href="https://naf15.github.io/STKR/"
+                  >Github Deployment</a
+                >
+              </div>
+            </div>
+            <div class="content">
+              STKR is a stock market and financial news aggregate. It calls on
+              two server-side APIs, Financial Modeling Prep and Reddit, to
+              provide users with up-to-date stock information, news, and
+              perspectives from other day traders.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-desktop">
+        <div class="column">
+          <div class="column">
+            <div class="card-position">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="./Assets/images/placeholder-port-3.jpg"
+                      class="card-img-top"
+                      alt="Placeholder image of a laptop"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">SEO Code Refactor</p>
+                      <p class="subtitle is-6">HTML, CSS</p>
+                      <a
+                        class="subtitle is-6"
+                        href="https://rgregg2014.github.io/HW1-code-refactor/"
+                        >Github Deployment</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    This assignment used HTML tags to improve search engine
+                    optimization and accessability.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column">
+            <div class="card-position">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="./Assets/images/placeholder-port-3.jpg"
+                      class="card-img-top"
+                      alt="Placeholder image of a laptop"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Password Generator</p>
+                      <p class="subtitle is-6">HTML, CSS, JavaScript</p>
+                      <a
+                        class="subtitle is-6"
+                        href="https://rgregg2014.github.io/Password-Generator/"
+                        >Github Deployment</a
+                      >
+                    </div>
+                  </div>
+                  <div class="content">
+                    This application takes in user input to select between four
+                    character classes to generate a custom, random password
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column">
+            <div class="card-position">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="./Assets/images/placeholder-port-3.jpg"
+                      class="card-img-top"
+                      alt="Placeholder image of a laptop"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Coming Soon</p>
+                      <p class="subtitle is-6">HTML, CSS, JavaScript</p>
+                      <a class="subtitle is-6" href="#">Github Deployment</a>
+                    </div>
+                  </div>
+                  <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    in fugiat veritatis nulla corporis maiores ipsam harum eaque
+                    dignissimos laboriosam cupiditate, voluptatibus provident
+                    obcaecati facilis molestias, pariatur quo ab animi?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column">
+            <div class="card-position">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="./Assets/images/placeholder-port-3.jpg"
+                      class="card-img-top"
+                      alt="Placeholder image of a laptop"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Coming Soon</p>
+                      <p class="subtitle is-6">HTML, CSS, JavaScript</p>
+                      <a class="subtitle is-6" href="#">Github Deployment</a>
+                    </div>
+                  </div>
+                  <div class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odit voluptatibus, corporis voluptate obcaecati voluptas
+                    ipsa nisi. Provident soluta dolore aperiam! Dolorum
+                    molestias aut error nostrum, distinctio ratione unde nemo
+                    quidem.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-
-    <!--Contact bar with links to GitHub profile, email, and LinkedIn profile.-->
-
-    <footer id="contactMe">
-      <ul class="contactBar">
-        <li>
-          <a href="https://github.com/rgregg2014" title="Find me on GitHub"
-            >GitHub</a
-          >
-        </li>
-        <li><a href="mailto:rgregg2014@gmail.com">rgregg2014@gmail.com</a></li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/rachel-gregg-35b59a208/"
-            title="Find me on LinkedIn"
-            >LinkedIn</a
-          >
-        </li>
-      </ul>
-    </footer>
   </body>
 </html>
